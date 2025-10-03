@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://eventease-m6pf.onrender.com/",
+    origin: "https://eventease-m6pf.onrender.com",
     methods: ["GET", "POST"],
   },
 });
