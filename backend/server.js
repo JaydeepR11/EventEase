@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://eventease-m6pf.onrender.com/",
     methods: ["GET", "POST"],
   },
 });
@@ -21,7 +21,12 @@ const io = socketIo(server, {
 socketManager.init(io);
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://eventease-m6pf.onrender.com",
+  })
+);
+
 app.use(express.json());
 
 // Database Connection
