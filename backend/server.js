@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://eventease-m6pf.onrender.com",
+    origin: ["http://localhost:5173", "https://event-ease-ochre.vercel.app"],
     methods: ["GET", "POST"],
   },
 });
@@ -23,7 +23,8 @@ socketManager.init(io);
 // Middleware
 app.use(
   cors({
-    origin: "https://eventease-m6pf.onrender.com",
+    origin: ["http://localhost:5173", "https://event-ease-ochre.vercel.app"],
+    credentials: true,
   })
 );
 
