@@ -118,7 +118,7 @@ EventEase is a comprehensive event booking platform that allows users to discove
    ```bash
    npm run dev
    ```
-   The application will be available at `http://localhost:3000`
+   The application will be available at `http://localhost:5173`
 
 ### Running the Full Application
 
@@ -135,7 +135,7 @@ EventEase is a comprehensive event booking platform that allows users to discove
    ```
 
 3. **Access the application**:
-   - Frontend: `http://localhost:3000`
+   - Frontend: `http://localhost:5173`
    - Backend API: `http://localhost:5000/api`
 
 ## API Documentation
