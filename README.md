@@ -22,8 +22,6 @@ EventEase is a comprehensive event booking platform that allows users to discove
 
 ### Technical Features
 
-- **Real-time Notifications**: Socket.io integration for live updates
-- **Secure Payments**: Integrated payment processing (Razorpay)
 - **Data Validation**: Comprehensive input validation and error handling
 - **Role-based Access Control**: Separate permissions for users and admins
 
